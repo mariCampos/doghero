@@ -1,23 +1,23 @@
 //
-//  RegisterController.swift
+//  RegisterPetViewController.swift
 //  DogHero
 //
-//  Created by Treinamento on 12/05/2018.
+//  Created by Treinamento on 19/05/2018.
 //  Copyright © 2018 Treinamento Porto Digital. All rights reserved.
 //
 
 import UIKit
 
-class RegisterController: UIViewController {
+class RegisterPetViewController: UIViewController {
 
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var addImgButton: UIButton!
     @IBOutlet weak var name: UITextField!
-    @IBOutlet weak var email: UITextField!
-    @IBOutlet weak var birthday: UIDatePicker!
-    @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var registerButton: UIButton!
-    
+    @IBOutlet weak var age: UITextField!
+    @IBOutlet weak var breed: UITextField!
+    @IBOutlet weak var comment: UITextField!
+    @IBOutlet weak var saveButton: UIButton!
     override func viewDidLoad() {
-        registerButton.backgroundColor = UIColor(red: 254/255, green: 220/255, blue: 210/255, alpha: 0.0)
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -27,7 +27,6 @@ class RegisterController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
 
     /*
