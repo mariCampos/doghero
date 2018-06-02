@@ -7,7 +7,18 @@
 //
 
 import Foundation
+import UIKit
 
 class User {
+    var name = ""
+    var email = ""
+    var password = ""
+    var birthday = Date()
     
+    init(name: String, email: String, password: String, birthday: Date) {
+        self.name = name
+        self.email = email
+        self.password = password
+        self.birthday = birthday
+    }
 }

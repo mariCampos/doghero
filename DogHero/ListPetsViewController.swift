@@ -10,14 +10,17 @@ import UIKit
 
 class ListPetsViewController: UIViewController , UICollectionViewDataSource, UICollectionViewDelegate {
 
-    @IBOutlet weak var pets: UICollectionView!
+    @IBOutlet weak var collectionView: UICollectionView!
+   
+    
+     private var pets = Pet.createPets()
     override func viewDidLoad() {
         
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.pets.delegate = self;
-        self.pets.dataSource = self;
+        self.collectionView.delegate = self;
+        self.collectionView.dataSource = self;
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,30 +32,22 @@ class ListPetsViewController: UIViewController , UICollectionViewDataSource, UIC
         return 1
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return interests.count
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return pets.count
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cellIdentifier = "InterestCell"
+        let cellIndentifier = "PetsCell"
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("InterestCell", forIndexPath: indexPath) as! InterestCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIndentifier, for: indexPath) as! PetCollectionViewCell
         
-        cell.interest = self.interests[indexPath.item]
+        cell.pet = self.pets[indexPath.item]
         
         return cell
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+ 
 
 }

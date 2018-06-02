@@ -7,19 +7,29 @@
 //
 
 import Foundation
+import UIKit
 
 class Pet {
     
-    var title = ""
-    var description = ""
-    var name = 0
+    var name = ""
+    var race = ""
+    var age = 0
     var featuredImage: UIImage!
+    var description = ""
     
-    init(title: String, description: String, featuredImage: UIImage!) {
-        self.title = title
+    init(title: String, race: String, age: Int, description: String) {
+        self.name = title
+        self.age = age
+        self.race = race
         self.description = description
-        self.featuredImage = featuredImage
-        numberOfMembers = 1
-        numberOfPosts = 1
-}
+    }
+    
+    static func createPets() -> [Pet] {
+        
+        return [
+            Pet(title: "Bob", race: "Bulldog", age:2, 
+                description: "Sou muit obediente"),
+            Pet(title: "Mel", race: "Beagle", age: 3, description: "Amo uma sandalia")
+        ]
+    }
 }
