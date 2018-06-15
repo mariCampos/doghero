@@ -17,6 +17,9 @@ class RegisterPetViewController: UIViewController {
     @IBOutlet weak var breed: UITextField!
     @IBOutlet weak var comment: UITextField!
     @IBOutlet weak var saveButton: UIButton!
+    
+    var repository = PetRepository.petRep
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,6 +30,8 @@ class RegisterPetViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
     
 
     /*

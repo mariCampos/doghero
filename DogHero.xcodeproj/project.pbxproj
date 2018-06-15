@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C2D695720D2118100C7565F /* PetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2D695620D2118100C7565F /* PetRepository.swift */; };
 		81164F7A20A72A2D002EBAA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81164F7920A72A2D002EBAA8 /* AppDelegate.swift */; };
 		81164F7C20A72A2D002EBAA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81164F7B20A72A2D002EBAA8 /* ViewController.swift */; };
 		81164F7F20A72A2D002EBAA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81164F7D20A72A2D002EBAA8 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C2D695620D2118100C7565F /* PetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetRepository.swift; sourceTree = "<group>"; };
 		81164F7620A72A2D002EBAA8 /* DogHero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogHero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81164F7920A72A2D002EBAA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81164F7B20A72A2D002EBAA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				81F7A70820B084190090CD71 /* Pet.swift */,
 				81F7A70A20B085760090CD71 /* User.swift */,
 				814AA49020C2CFF100CD0707 /* PetCollectionViewCell.swift */,
+				4C2D695620D2118100C7565F /* PetRepository.swift */,
 			);
 			path = DogHero;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				81164F9120A73509002EBAA8 /* RegisterController.swift in Sources */,
 				814AA49120C2CFF100CD0707 /* PetCollectionViewCell.swift in Sources */,
 				81164F7C20A72A2D002EBAA8 /* ViewController.swift in Sources */,
+				4C2D695720D2118100C7565F /* PetRepository.swift in Sources */,
 				81164F8F20A72BEF002EBAA8 /* LoginController.swift in Sources */,
 				81F7A70920B084190090CD71 /* Pet.swift in Sources */,
 				81164F8220A72A2D002EBAA8 /* DogHero.xcdatamodeld in Sources */,
