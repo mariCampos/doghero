@@ -12,8 +12,9 @@ class ListPetsViewController: UIViewController , UICollectionViewDataSource, UIC
 
     @IBOutlet weak var collectionView: UICollectionView!
    
+    private var pets = PetRepository.petRep
+    private var petsRow : Int = 0
     
-     private var pets = Pet.createPets()
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -33,7 +34,8 @@ class ListPetsViewController: UIViewController , UICollectionViewDataSource, UIC
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return pets.count
+        print(pets.getAll().count)
+        return pets.getAll().count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -42,10 +44,19 @@ class ListPetsViewController: UIViewController , UICollectionViewDataSource, UIC
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIndentifier, for: indexPath) as! PetCollectionViewCell
         
-        cell.pet = self.pets[indexPath.item]
+        cell.pet = self.pets.getPet(index: indexPath.item)
         
         return cell
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.collectionView.reloadData()
+    }
+    
+    //func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: //IndexPath) {
+       // let collectionViewStoryBoard = UIStoryboard.init(name: "Main", bundle: nil)
+        
+    //}
     
 
  

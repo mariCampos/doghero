@@ -17,6 +17,7 @@
 		81164F8F20A72BEF002EBAA8 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81164F8E20A72BEF002EBAA8 /* LoginController.swift */; };
 		81164F9120A73509002EBAA8 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81164F9020A73509002EBAA8 /* RegisterController.swift */; };
 		814AA49120C2CFF100CD0707 /* PetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814AA49020C2CFF100CD0707 /* PetCollectionViewCell.swift */; };
+		817E9F6520D55237000C969B /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817E9F6420D55237000C969B /* UserRepository.swift */; };
 		81F7A70320B0703A0090CD71 /* ListPetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F7A70220B0703A0090CD71 /* ListPetsViewController.swift */; };
 		81F7A70520B070830090CD71 /* RegisterPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F7A70420B070830090CD71 /* RegisterPetViewController.swift */; };
 		81F7A70720B070D40090CD71 /* MyPetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F7A70620B070D40090CD71 /* MyPetsViewController.swift */; };
@@ -37,6 +38,7 @@
 		81164F8E20A72BEF002EBAA8 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		81164F9020A73509002EBAA8 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		814AA49020C2CFF100CD0707 /* PetCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetCollectionViewCell.swift; sourceTree = "<group>"; };
+		817E9F6420D55237000C969B /* UserRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		81F7A70220B0703A0090CD71 /* ListPetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPetsViewController.swift; sourceTree = "<group>"; };
 		81F7A70420B070830090CD71 /* RegisterPetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPetViewController.swift; sourceTree = "<group>"; };
 		81F7A70620B070D40090CD71 /* MyPetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPetsViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				81F7A70A20B085760090CD71 /* User.swift */,
 				814AA49020C2CFF100CD0707 /* PetCollectionViewCell.swift */,
 				4C2D695620D2118100C7565F /* PetRepository.swift */,
+				817E9F6420D55237000C969B /* UserRepository.swift */,
 			);
 			path = DogHero;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				817E9F6520D55237000C969B /* UserRepository.swift in Sources */,
 				81164F9120A73509002EBAA8 /* RegisterController.swift in Sources */,
 				814AA49120C2CFF100CD0707 /* PetCollectionViewCell.swift in Sources */,
 				81164F7C20A72A2D002EBAA8 /* ViewController.swift in Sources */,

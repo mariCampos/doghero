@@ -11,12 +11,10 @@ import UIKit
 class RegisterPetViewController: UIViewController {
 
     @IBOutlet weak var image: UIImageView!
-    @IBOutlet weak var addImgButton: UIButton!
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var age: UITextField!
     @IBOutlet weak var breed: UITextField!
     @IBOutlet weak var comment: UITextField!
-    @IBOutlet weak var saveButton: UIButton!
     
     var newName : String = ""
     var newAge : Int = 0
@@ -42,7 +40,7 @@ class RegisterPetViewController: UIViewController {
         newComment = comment.text!
         
         let pet = Pet(title: newName,race:newBreed, age: newAge, description: newComment)
-        repository.addPet(newPet: <#T##Pet#>)
+        repository.addPet(newPet: pet)
         print(repository.petExist(name: pet.name))
     }
     
