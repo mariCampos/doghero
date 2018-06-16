@@ -18,6 +18,11 @@ class RegisterPetViewController: UIViewController {
     @IBOutlet weak var comment: UITextField!
     @IBOutlet weak var saveButton: UIButton!
     
+    var newName : String = ""
+    var newAge : Int = 0
+    var newBreed : String = ""
+    var newComment : String = ""
+    
     var repository = PetRepository.petRep
     
     override func viewDidLoad() {
@@ -31,7 +36,15 @@ class RegisterPetViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    @IBAction func createPet(_ sender: Any) {
+        newName = name.text!
+        newBreed = breed.text!
+        newComment = comment.text!
+        
+        let pet = Pet(title: newName,race:newBreed, age: newAge, description: newComment)
+        repository.addPet(newPet: <#T##Pet#>)
+        print(repository.petExist(name: pet.name))
+    }
     
 
     /*
